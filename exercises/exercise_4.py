@@ -28,9 +28,9 @@ https://docs.python.org/3/library/functions.html#open
 """
 
 
-def read_file(filepath):
+def process_file(filepath):
     pass
 
 
 if __name__ == "__main__":
-    assert read_file("csvs/file1.csv") == 1
+    assert process_file("csvs/file1.csv") == 1
