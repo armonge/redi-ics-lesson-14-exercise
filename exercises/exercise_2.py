@@ -18,6 +18,8 @@ Write a function  that takes 2 arguments.
 
 
 The function should return the result of applying the operation on the operand1
+
+Hint!: Remember you can use the function you wrote in the previous exercise
 """
 
 
