@@ -11,7 +11,7 @@ Think of the edgecases
 Implement some extra operations:
     Square Root? Power?
 
-    Can you handle a CSV with swapped columns?
+    Can you handle a CSV with swapped columns and headers?
     Eg: csvs/with-headers.csv
 
     hint: use csv.DictReader
