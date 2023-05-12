@@ -30,8 +30,13 @@ def split_operation(operation):
     pass
 
 
-if __name__ == "__main__":
+def test_split_operation():
     assert split_operation("SUM,5") == ("SUM", 5)
     assert split_operation("MULTIPLY,5") == ("MULTIPLY", 5)
     assert split_operation("DIVIDE,2") == ("DIVIDE", 2)
     assert split_operation("SUBTRACT,10") == ("SUBTRACT", 10)
+
+
+if __name__ == "__main__":
+    import pytest
+    pytest.main([__file__])

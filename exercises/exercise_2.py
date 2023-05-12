@@ -27,8 +27,13 @@ def process_operation(operand1, operation):
     pass
 
 
-if __name__ == "__main__":
+def test_process_operation():
     assert process_operation(5, "SUM,5") == 10
     assert process_operation(2, "MULTIPLY,5") == 10
     assert process_operation(20, "DIVIDE,2") == 10
     assert process_operation(20, "SUBTRACT,10") == 10
+
+
+if __name__ == "__main__":
+    import pytest
+    pytest.main([__file__])

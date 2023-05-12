@@ -20,9 +20,17 @@ Question:
     - What can you use these arguments for?
 """
 
+
 def print_script_arguments():
     pass
 
 
-if __name__ == "__main__":
+def test_print_script_arguments(capsys):
     print_script_arguments()
+    captured = capsys.readouterr()
+    assert 'exercises/exercise_3.py' in captured.out
+
+
+if __name__ == "__main__":
+    import pytest
+    pytest.main([__file__])
