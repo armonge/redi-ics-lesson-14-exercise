@@ -25,5 +25,10 @@ def process_file(filepath):
     pass
 
 
-if __name__ == "__main__":
+def test_process_file():
     assert process_file("csvs/file1.csv") == 1
+
+
+if __name__ == "__main__":
+    import pytest
+    pytest.main([__file__])
